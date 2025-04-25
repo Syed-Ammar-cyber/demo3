@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Committee</title>
+  <link rel="stylesheet" href="commitees.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Mobile Menu Styles */
+    .mobile-menu-toggle {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    
+    .mobile-menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+    
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 999;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .mobile-menu.active {
+      display: flex;
+    }
+    
+    .mobile-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 15px 0;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+    
+    .mobile-menu a:hover {
+      transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: block;
+      }
+      
+      .main-header {
+        display: none;
+      }
+      
+      main {
+        padding-top: 80px;
+      }
+
+      /* Mobile Content Styles */
+      .header, .header2 {
+        padding: 1rem;
+        gap: 1rem;
+      }
+
+      .header h1, .header2 h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .logos {
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .logos img {
+        height: 120px;
+      }
+
+      .main-section-left, .main-section-right {
+        padding: 1rem;
+      }
+
+      .image-card {
+        /* margin-top: 100rem; */
+        width: 100%;
+        margin-bottom: 10rem;
+      }
+
+      .text-section {
+        width: 100%;
+        padding: 0 1rem;
+      }
+
+      .caption {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <button class="mobile-menu-toggle hover-scale" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <div class="mobile-menu">
+    <a href="bliss.html" class="hover-lift">Home</a>
+    <a href="about.html" class="hover-lift">About</a>
+    <a href="commitees.html" class="hover-lift">Committees</a>
+    <a href="contacts.html" class="hover-lift">Contact</a>
+  </div>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo hover-glow">BLISS MUN</div>
+      <nav class="nav-links">
+        <a href="bliss.html" class="hover-lift">Home</a>
+        <a href="about.html" class="hover-lift">About</a>
+        <a href="commitees.html" class="hover-lift">Committees</a>
+        <a href="contacts.html" class="hover-lift">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+ 
+    
+  
+
+
+    <section class="header" id="unhrc2">
+      <h1>
+        ALL INDIA  <br />
+        POLITICAL PARTIES MEET
+      </h1>
+      <div class="logos">
+        <img src="blisslogo.jpg" alt="UNHRC Logo" />
+        <img src="logoc1.png" alt="BLISS MUN Logo" />
+      </div>
+    </section>
+  
+    <div class="main-section-left">
+      <div class="image-card">
+        <img src="aippm.jpg" alt="UN Assembly">
+        <div class="caption">
+          Agenda: AFSPA-1958
+        </div>
+      </div>
+      <div class="text-section">
+        <p>
+          The All India Political Parties Meet (AIPPM) will deliberate on the unconstitutional extent of military powers granted by the Armed Forces Special Powers Act (AFSPA) of 1958, particularly in conflict-prone and conflicted regions of India. This agenda focuses on critically examining the broad and often controversial powers given to armed forces under AFSPA, including arrest without warrant, use of lethal force, and legal immunity in disturbed areas across several northeastern states and Jammu & Kashmir. Delegates will discuss the implications of these powers on human rights, democratic principles, and the rule of law, aiming to explore reforms that balance national security with constitutional safeguards and protection of civil liberties. The committee will also consider the impact of AFSPA on local communities and the ongoing debates around its necessity and scope.
+
+        </p>
+        <div class="button-borders">
+          <button class="primary-button"> BUTTON
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr/>
+
+    <section class="header2" id="aippm">
+      <div class="logos">
+        <img src="blisslogo.jpg" alt="UNHRC Logo" />
+        <img src="AIPPM.png" alt="BLISS MUN Logo" />
+      </div>
+      <h2>
+        UNITED NATIONS  <br />
+        SECURITY COUNCIL
+      </h2>
+    </section>
+  
+    <div class="main-section-right">
+      <div class="image-card">
+        <img src="unsc.jpg" alt="UN Assembly">
+        <div class="caption">
+          Agenda: Tackling Power Stagnation in the UNSC
+        </div>
+      </div>
+      <div class="text-section">
+        <p>
+          The United Nations Security Council (UNSC) committee will deliberate on the urgent issue of power stagnation within the Council, focusing on the need for structural reforms to create a more equitable global security framework. Central to this agenda is the examination of the provision of veto powers, which has long been a source of deadlock and perceived inequity in the Council’s decision-making process.The committee will explore reform proposals—such as modifying or limiting the use of veto, expanding membership, and introducing new categories of representation—to enhance both equity and efficiency within the UNSC.
+
+        </p>
+        <div class="button-borders">
+          <button class="primary-button"> BUTTON
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+
+   
+    <section class="header fade-in" id="unhrc1">
+        <h1>
+          UNITED NATIONS <br />
+          HUMAN RIGHTS COUNCIL
+        </h1>
+        <div class="logos">
+          <img src="blisslogo.jpg" alt="UNHRC Logo" class="hover-scale" />
+          <img src="logoc1.png" alt="BLISS MUN Logo" class="hover-scale" />
+        </div>
+    </section>
+
+    <div class="main-section-left reveal">
+      <div class="image-card hover-glow">
+      <img src="unhrc.jpg" alt="UN Assembly">
+      <div class="caption">
+        Agenda: Grooming Gang activities in the Western Hemisphere
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        The United Nations Human Rights Council (UNHRC) will address the pressing issue of grooming gang activities in the Western Hemisphere, focusing on the involvement of illegal immigrants. This agenda aims to explore the human rights implications of such activities while emphasizing the legal frameworks related to the Jehovah’s Witnesses community. Delegates will be tasked with examining the intersection of human rights, immigration laws, and religious freedoms to propose comprehensive strategies that uphold justice, protect vulnerable populations, and promote social cohesion in affected regions. The committee will seek to balance security concerns with respect for human rights and international legal standards.
+
+      </p>
+      <div class="button-borders">
+          <button class="primary-button btn-pulse">BUTTON</button>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+
+
+    <section class="header2" id="unhrc3">
+    <div class="logos">
+      <img src="blisslogo.jpg" alt="UNHRC Logo" />
+      <img src="logoc1.png" alt="BLISS MUN Logo" />
+    </div>
+    <h2>
+      UNITED NATIONS OFFICE <br />
+      ON DRUGS AND CRIME
+    </h2>
+  </section>
+
+  <div class="main-section-right">
+    <div class="image-card">
+      <img src="unodc.jpg" alt="UN Assembly">
+      <div class="caption">
+        Agenda: State Complicity and Corporate Collusion
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        The United Nations Office on Drugs and Crime (UNODC) will discuss the critical issue of state complicity and corporate collusion in empowering transnational drug cartels. This agenda focuses on how certain state actors and corporate entities facilitate drug trafficking networks by providing precursor chemicals, logistical support, or turning a blind eye to illicit activities. Delegates will examine the impact of corruption, political alliances, and economic incentives that enable cartels to operate across borders, undermining global security and public health. The committee aims to develop strategies to enhance international cooperation, strengthen legal frameworks, and hold complicit actors accountable to disrupt the operations of these powerful criminal organizations.
+
+      </p>
+      <div class="button-borders">
+        <button class="primary-button"> BUTTON
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+
+ 
+    <section class="header" id="unhrc4">
+    <h1>
+      HISTORICAL<br />
+      CRISIS COMMITTEE
+    </h1>
+    <div class="logos">
+      <img src="blisslogo.jpg" alt="UNHRC Logo" />
+      <img src="logoc1.png" alt="BLISS MUN Logo" />
+    </div>
+  </section>
+
+  <div class="main-section-left">
+    <div class="image-card">
+      <img src="hcc.avif" alt="UN Assembly">
+      <div class="caption">
+        Freeze Date - 29th October 1956<br>
+        Agenda: The Suez Canal Crisis
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        The Historical Crisis Committee (HCC) will immerse delegates in the pivotal events of the Suez Crisis, with the freeze date set at 29th October 1956—the day Israeli forces launched their invasion of Egypt. This marked the beginning of a dramatic military and diplomatic confrontation, triggered by Egyptian President Gamal Abdel Nasser’s nationalization of the Suez Canal, previously controlled by British and French interests. The crisis rapidly escalated as Britain and France, in coordination with Israel, sought to regain control of the canal and depose Nasser, fearing the loss of Western influence and access to a vital maritime route.
+
+      </p>
+      <div class="button-borders">
+        <button class="primary-button"> BUTTON
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+
+  
+    <section class="header2" id="unhrc5">
+    <div class="logos">
+      <img src="blisslogo.jpg" alt="UNHRC Logo" />
+      <img src="logoc1.png" alt="BLISS MUN Logo" />
+    </div>
+    <h2>
+      CONTINUOUS <br />
+      CRISIS COMMITTEE
+    </h2>
+  </section>
+
+  <div class="main-section-right">
+    <div class="image-card">
+      <img src="ccc.jpg" alt="UN Assembly">
+      <div class="caption">
+        Agenda: Reshaping The War of Kurukshetra
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        The Continuous Crisis Committee (CCC) will explore the intriguing agenda of "Redirecting the War of Kurukshetra – Mahabharat." In this simulation, delegates will step into the shoes of legendary figures from the Mahabharata and confront the pivotal moments that led to the historic battle between the Pandavas and Kauravas. The committee will challenge participants to re-examine the causes, decisions, and alliances that shaped the conflict, with the objective of seeking alternative diplomatic, strategic, or ethical solutions that could have altered the course of the war. Delegates will debate key turning points, negotiate peace, and propose new pathways to resolve the dynastic struggle, testing their skills in crisis management, negotiation, and creative problem-solving within the rich context of one of India’s greatest epics.
+
+      </p>
+      <div class="button-borders">
+        <button class="primary-button"> BUTTON
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+
+
+    <section class="header" id="unhrc6">
+    <h1>
+      INTERNATIONAL <br />
+      PRESS
+    </h1>
+    <div class="logos">
+      <img src="blisslogo.jpg" alt="UNHRC Logo" />
+      <img src="logoc1.png" alt="BLISS MUN Logo" />
+    </div>
+  </section>
+
+  <div class="main-section-left">
+    <div class="image-card">
+      <img src="ip.jpg" alt="UN Assembly">
+      <div class="caption">
+        Agenda: Awaiting International Press Corps
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        The International Press (IP) committee invites esteemed Journalists, Photographers, Caricaturists, and Video Editors to join a dynamic team dedicated to capturing and reporting every moment of the conference. As the eyes and ears of the event, IP members will document debates, conduct interviews, create insightful articles, and produce engaging visual content that reflects the spirit and intensity of the proceedings. The committee offers a unique opportunity to exercise integrity, creativity, and analytical skills while ensuring unbiased, accurate, and thought-provoking coverage across all committees. Whether through words, images, caricatures, or videos, the International Press plays a crucial role in shaping public perception and fostering awareness about the critical issues discussed at the MUN.
+
+      </p>
+      <div class="button-borders">
+        <button class="primary-button"> BUTTON
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+    <!-- <section class="header2" id="unhrc7">
+    <div class="logos">
+      <img src="blisslogo.jpg" alt="UNHRC Logo" />
+      <img src="logoc1.png" alt="BLISS MUN Logo" />
+    </div>
+    <h2>
+      THE UNITED NATIONS <br />
+      HUMAN RIGHTS COUNCIL
+    </h2>
+  </section>
+
+  <div class="main-section-right">
+    <div class="image-card">
+      <img src="hall.jpg" alt="UN Assembly">
+      <div class="caption">
+        Freeze Date: 3rd August 1990<br>
+        Agenda: The Gulf War
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        The Gulf War was a war that started in 1990 and ended in 1991 after Iraq had invaded Kuwait on 2nd of August 1990.
+        Saddam Hussein, the president of Iraq at the time used the pretext that Kuwait was part of Iraq and claimed that
+        Kuwait owed a debt to Iraq. His actions however were interpreted as a purely aggressive and a provocation to peace
+        and security of the region.
+      </p>
+      <div class="button-borders">
+        <button class="primary-button"> BUTTON
+        </button>
+      </div>
+    </div>
+  </div> -->
+  </main>
+
+  <button class="scroll-to-top hover-scale" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Loading animation
+    window.addEventListener('load', () => {
+      document.querySelector('.loading').style.display = 'none';
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    const revealOnScroll = () => {
+      revealElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial check
+
+    // Mobile menu functionality
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuSpans = document.querySelectorAll('.mobile-menu-toggle span');
+    
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      menuSpans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+      menuSpans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
+      menuSpans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.mobile-menu') && !e.target.closest('.mobile-menu-toggle') && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+        menuSpans[0].style.transform = 'none';
+        menuSpans[1].style.opacity = '1';
+        menuSpans[2].style.transform = 'none';
+      }
+    });
+    
+    // Prevent scrolling when menu is open
+    mobileMenu.addEventListener('wheel', (e) => {
+      if (mobileMenu.classList.contains('active')) {
+        e.preventDefault();
+      }
+    });
+
+    // Header scroll behavior
+    const header = document.querySelector('.main-header');
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Show/hide header based on scroll direction
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        header.classList.add('hidden');
+      } else {
+        header.classList.remove('hidden');
+      }
+      lastScrollTop = scrollTop;
+
+      // Show/hide scroll to top button
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
